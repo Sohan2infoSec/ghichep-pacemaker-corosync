@@ -17,7 +17,7 @@ ___
 
 +  <a name="concept">Quorum là gì?</a>
 
-	+ Là giải pháp tránh sự "split brain" trong cluster - một trường hopjq mà cluster được tách thành nhiều phần. Nhưng mỗi phần lại tiếp tục hoạt động như những cluster riêng biệt, có khả năng ghi vào cùng một dữ liệu và  có thể gây ra mất mát dữ liệu.
+	+ Là giải pháp tránh sự "split brain" trong cluster - một trường hợp mà cluster được tách thành nhiều phần. Nhưng mỗi phần lại tiếp tục hoạt động như những cluster riêng biệt, có khả năng ghi vào cùng một dữ liệu và có thể gây ra mất mát dữ liệu.
 
 	+ Để duy trì tính toàn vẹn và sẵn có của cluster, các hệ thống cluster sử dụng khái niệm này để ngắn ngừa sự mất mát dữ liệu. Một cluster có quorum khi có hơn một nửa số lượng các node đang có trạng thái online. Để giảm thiểu nguy cơ mất mát dữ liệu, mặc định pacemaker sẽ ngừng tất cả các resource nếu cluster không có quorum
 
@@ -31,8 +31,8 @@ ___
 
 		- ignore: Tiếp tục quản lý tất cả các tài nguyên
 		- freeze: Tiếp tục quản lý tất cả các tài nguyên, nhưng không phục hồi tài nguyên từ node lỗi
-		- stop: Dừng tất cả các resource trong vùng ảnh hưởng.
-		- suicide: Lập rào cản tất cả các node trong vùng có cluster bị ản hưởng
+		- stop: Dừng tất cả các resource trong vùng ảnh hưởng
+		- suicide: Lập rào cản tất cả các node trong vùng có cluster bị ảnh hưởng
 
 ___
 
